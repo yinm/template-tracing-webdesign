@@ -14,23 +14,22 @@ module.exports = {
             options: {
               url: false,
               sourceMap,
-              importLoaders: 2
-            }
+              importLoaders: 2,
+            },
           },
           {
             loader: "sass-loader",
             options: {
-              sourceMap
-            }
-          }
-        ]
-      }
-    ]
+              sourceMap,
+            },
+          },
+        ],
+      },
+    ],
   },
 
   devServer: {
-    open: true,
     contentBase: "./public",
-    watchContentBase: true
-  }
+    watchContentBase: true,
+  },
 };
